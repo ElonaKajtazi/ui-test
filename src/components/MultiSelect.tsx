@@ -83,7 +83,7 @@ const MultiSelect = ({ options, placeholder, isLoading = false, preselected = []
     <div className='space-y-2'>
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
-          <div className='relative w-full border rounded-md p-2 cursor-pointer flex flex-wrap items-center gap-2 min-h-[40px]'>
+          <button className='relative w-full border rounded-md p-2 cursor-pointer flex flex-wrap items-center gap-2 min-h-[40px]'>
             {selected.length > 0 ? (
               selected.map((s) => {
                 const option = asyncOptions.find((opt) => opt.value === s);
@@ -107,7 +107,7 @@ const MultiSelect = ({ options, placeholder, isLoading = false, preselected = []
               )}
               <ChevronDown className='ml-2 w-4 h-4 text-gray-500' />
             </div>
-          </div>
+          </button>
         </PopoverTrigger>
         <PopoverContent className='w-[var(--radix-popover-trigger-width)] p-2 shadow-lg rounded-md bg-white'>
           {loading ? (

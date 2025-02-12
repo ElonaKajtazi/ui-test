@@ -208,9 +208,9 @@ export const NoIcon: Story = {
 
 export const NoAction: Story = {
   args: {
-    type: "success",
-    title: "Success",
-    description: "Your operation was successful!",
+    type: 'success',
+    title: 'Success',
+    description: 'Your operation was successful!',
   },
 
   render: (args) => (
